@@ -13,7 +13,7 @@ PORT = process.env.PORT || 8000;
 dotenv.config();
 
 // database connection
-const MONGO_URL = process.env.MONGO_URL || "mongodb+srv://spy_der:root@expense-manangement.qzvxonu.mongodb.net/backend-aman";
+const MONGO_URL = process.env.MONGO_URL;
 mongoDb(MONGO_URL);
 
 //server creation
