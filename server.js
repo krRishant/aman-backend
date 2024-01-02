@@ -13,7 +13,8 @@ PORT = process.env.PORT || 8000;
 dotenv.config();
 
 // database connection
-mongoDb();
+const MONGO_URL = process.env.MONGO_URL;
+mongoDb(MONGO_URL);
 
 //server creation
 const app = express();
