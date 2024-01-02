@@ -1,0 +1,67 @@
+POST http://localhost:8000/records/getRecords
+Content-Type: application/json
+
+{
+    "enrollment" : "20UPE"
+}
+
+###
+
+POST http://localhost:8000/records/createRecord
+Content-Type: application/json
+
+{
+    "enrollment": "20UPE",
+    "first_name": "Niraj",
+    "last_name": "patel",
+    "email": "n@gml.com",
+    "contact": "password"
+}
+
+###
+POST http://localhost:8000/records/deleteRecord
+Content-Type: application/json
+
+{
+    "enrollment": "20UPE101"
+    
+}
+
+###
+POST http://localhost:5050/transaction/addtransaction
+Content-Type: application/json
+
+
+{
+    "amount"
+: 
+"500",
+"category"
+: 
+"Food",
+"date"
+: 
+"0026-03-31",
+"description"
+: 
+"545",
+"reference"
+: 
+"15",
+"type"
+: 
+"income",
+"userid"
+: 
+"6460c3fc806b74dd0e2d717a"
+}
+
+###
+POST http://localhost:5050/transaction/gettransaction
+Content-Type: application/json
+
+
+{
+    "userid": "6460c3fc806b74dd0e2d717a"
+}
+
