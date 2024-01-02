@@ -27,6 +27,6 @@ const userSchema = new mongoose.Schema({
 },{ timestamps:true} // automatically adds timestamps to all the records 
 );
 
-const userModel = mongoose.model("users", userSchema);
+const userModel = mongoose.model("Aman", userSchema);
 
 module.exports = userModel;
