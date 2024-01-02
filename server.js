@@ -6,7 +6,7 @@ const Routes = require('./routes/Routes');
 const bodyParser = require('body-parser');
 
 
-PORT = 8000;
+PORT = process.env.PORT || 8000;
 
 
 //dotenv configuration
